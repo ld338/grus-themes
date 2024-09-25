@@ -1,0 +1,118 @@
+@import url("https://sardonicism-04.github.io/ayu-discord/css/ayu.css");
+
+/* Uncomment any of these lines to enable them */
+
+/* Border Radius-es (Square Icons etc) */
+/* @import url(https://sardonicism-04.github.io/ayu-discord/extensions/borders.css); */
+
+/* Lurker Input Bar (Hides the input bar when you aren't hovering it to prevent accidentally triggering typing) */
+/* @import url(https://sardonicism-04.github.io/ayu-discord/extensions/lurker-input.css); */
+
+/* Floating Sidebar (The sidebar floats and hides itself when not active) */
+/* @import url(https://sardonicism-04.github.io/ayu-discord/extensions/floating-sidebar.css); */
+
+/* Declares variables used within the theme and all */
+.theme-dark {
+    /* Discord vars */
+    --background-primary: #0D1016;
+    --background-secondary: #0A0E14;
+    --background-secondary-alt: #000000;
+    --background-tertiary: #00010A;
+    --background-accent: #1B2733;
+    --background-floating: #0A0E14;
+
+    --channeltextarea-background: var(--background-accent);
+    --channels-default: #B3B1AD;
+
+    --text-muted: #4D5566;
+    --text-normal: #FFFFFF;
+    --text-link: #39BAE6;
+
+    --input-background: var(--background-tertiary);
+
+    --interactive-normal: #B3B1AD;
+    --interactive-hover: #B3B1AD;
+    --interactive-active: #fff;
+    --interactive-muted: #4D5566;
+
+    --header-primary: #fff;
+    --header-secondary: #c9c9c9;
+
+    --background-mentioned: #a29bfe1c;
+    --background-mentioned-hover: #a29bfe31;
+
+    --background-modifier-hover: #2737472d;
+    --background-modifier-active: #27374749;
+    --background-modifier-selected: #2737475d;
+    --background-modifier-accent: var(--background-accent);
+
+    --activity-card-background: var(--background-tertiary);
+    --home-background: var(--background-tertiary);
+
+    /* Ayu theme-specific vars */
+    --ayu-positive: #91B362;
+    --ayu-negative: #D96C75;
+    --ayu-default: #6994BF;
+
+    --ayu-transition-duration: 0.25s;
+
+    --ayu-syntax-tag: #39BAE6;
+    --ayu-syntax-func: #FFB454;
+    --ayu-syntax-entity: #59C2FF;
+    --ayu-syntax-string: #C2D94C;
+    --ayu-syntax-regexp: #95E6CB;
+    --ayu-syntax-markup: #F07178;
+    --ayu-syntax-keyword: #FF8F40;
+    --ayu-syntax-special: #E6B673;
+    --ayu-syntax-comment: #626A73;
+    --ayu-syntax-constant: #FFEE99;
+    --ayu-syntax-operator: #F29668;
+    --ayu-syntax-added: #91B362;
+    --ayu-syntax-removed: #D96C75;
+
+    --ayu-menu-red: var(--ayu-negative);
+    --ayu-menu-default: var(--ayu-default);
+
+    --ayu-button-default: var(--ayu-default);
+    --ayu-button-positive: var(--ayu-positive);
+    --ayu-button-negative: var(--ayu-negative);
+
+    --ayu-presence-playing: var(--ayu-default);
+    --ayu-presence-spotify: var(--ayu-positive);
+    --ayu-presence-streaming: #a37acc;
+
+    --ayu-status-online: var(--ayu-positive);
+    --ayu-status-dnd: var(--ayu-negative);
+    --ayu-status-idle: #FF8F40;
+    --ayu-status-streaming: var(--ayu-presence-streaming);
+    --ayu-status-offline: var(--background-primary);
+
+    --ayu-border-radius: 7.5px;
+
+    --ayu-bot-tag-bg-colour: #39BAE6;
+    --ayu-bot-tag-fg-colour: #000000;
+    --ayu-bot-tag-radius: 2.5px;
+
+    --ayu-embed-right-radius: 15px;
+
+    --ayu-icon-badge-radius: 4.5px;
+
+    --scrollbar-auto-thumb: var(--background-secondary-alt);
+    --scrollbar-auto-track: transparent;
+
+    --scrollbar-thin-thumb: var(--background-secondary-alt);
+    --scrollbar-thin-track: transparent;
+
+    --ayu-notification-colour: #a29bfe;
+}
+
+html.theme-light::before {
+    content: "This theme is made to be used with Discord's dark theme. Please switch to that for the best experience.";
+    font-family: Whitney, Helvetica Neue, Helvetica, Arial, sans-serif;
+    color: red;
+    text-align: center;
+    position: absolute;
+    z-index: 10001;
+    right: 0;
+    left: 0;
+}
